@@ -9,21 +9,47 @@
 /* Begin PBXBuildFile section */
 		BCD099082C1D52AE000B5B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099072C1D52AE000B5B6D /* AppDelegate.swift */; };
 		BCD0990A2C1D52AE000B5B6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */; };
-		BCD0990C2C1D52AE000B5B6D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0990B2C1D52AE000B5B6D /* ViewController.swift */; };
+		BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0990B2C1D52AE000B5B6D /* HomeViewController.swift */; };
 		BCD0990F2C1D52AE000B5B6D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BCD0990E2C1D52AE000B5B6D /* Base */; };
 		BCD099112C1D52AF000B5B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCD099102C1D52AF000B5B6D /* Assets.xcassets */; };
 		BCD099142C1D52AF000B5B6D /* Base in Resources */ = {isa = PBXBuildFile; fileRef = BCD099132C1D52AF000B5B6D /* Base */; };
+		BCD099212C1D5B58000B5B6D /* NetworkUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099202C1D5B58000B5B6D /* NetworkUtility.swift */; };
+		BCD099232C1D5D11000B5B6D /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099222C1D5D11000B5B6D /* APIClient.swift */; };
+		BCD099252C1D5D75000B5B6D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099242C1D5D75000B5B6D /* NetworkService.swift */; };
+		BCD099282C1D5D9D000B5B6D /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099272C1D5D9D000B5B6D /* Models.swift */; };
+		BCD0992C2C1D5DDF000B5B6D /* InspectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0992B2C1D5DDF000B5B6D /* InspectionViewModel.swift */; };
+		BCD0992F2C1D6623000B5B6D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0992D2C1D6623000B5B6D /* LoginViewController.swift */; };
+		BCD099302C1D6623000B5B6D /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD0992E2C1D6623000B5B6D /* LoginViewController.xib */; };
+		BCD099332C1D6D3A000B5B6D /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099322C1D6D3A000B5B6D /* Utility.swift */; };
+		BCD099352C1D6E7D000B5B6D /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099342C1D6E7D000B5B6D /* Constant.swift */; };
+		BCD099372C1D6F4D000B5B6D /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099362C1D6F4D000B5B6D /* RegisterViewModel.swift */; };
+		BCD0993B2C1EEED5000B5B6D /* InspectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099392C1EEED5000B5B6D /* InspectionViewController.swift */; };
+		BCD0993C2C1EEED5000B5B6D /* InspectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BCD0993A2C1EEED5000B5B6D /* InspectionViewController.xib */; };
+		BCD099402C1EFBCA000B5B6D /* QuestionAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0993E2C1EFBCA000B5B6D /* QuestionAnswerCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BCD099042C1D52AE000B5B6D /* Tendable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tendable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD099072C1D52AE000B5B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		BCD0990B2C1D52AE000B5B6D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BCD0990B2C1D52AE000B5B6D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BCD0990E2C1D52AE000B5B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BCD099102C1D52AF000B5B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCD099132C1D52AF000B5B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BCD099152C1D52AF000B5B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCD099202C1D5B58000B5B6D /* NetworkUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkUtility.swift; sourceTree = "<group>"; };
+		BCD099222C1D5D11000B5B6D /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		BCD099242C1D5D75000B5B6D /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		BCD099272C1D5D9D000B5B6D /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		BCD0992B2C1D5DDF000B5B6D /* InspectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewModel.swift; sourceTree = "<group>"; };
+		BCD0992D2C1D6623000B5B6D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		BCD0992E2C1D6623000B5B6D /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		BCD099322C1D6D3A000B5B6D /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		BCD099342C1D6E7D000B5B6D /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		BCD099362C1D6F4D000B5B6D /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		BCD099392C1EEED5000B5B6D /* InspectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionViewController.swift; sourceTree = "<group>"; };
+		BCD0993A2C1EEED5000B5B6D /* InspectionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectionViewController.xib; sourceTree = "<group>"; };
+		BCD0993E2C1EFBCA000B5B6D /* QuestionAnswerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionAnswerCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +84,74 @@
 			children = (
 				BCD099072C1D52AE000B5B6D /* AppDelegate.swift */,
 				BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */,
-				BCD0990B2C1D52AE000B5B6D /* ViewController.swift */,
+				BCD0993D2C1EF0FC000B5B6D /* Home */,
+				BCD099312C1D662C000B5B6D /* Login */,
+				BCD099382C1EEEBD000B5B6D /* Inspection */,
+				BCD099262C1D5D8D000B5B6D /* Model */,
+				BCD0992A2C1D5DCE000B5B6D /* ViewModels */,
+				BCD0991F2C1D5B26000B5B6D /* Network */,
+				BCD099322C1D6D3A000B5B6D /* Utility.swift */,
+				BCD099342C1D6E7D000B5B6D /* Constant.swift */,
 				BCD0990D2C1D52AE000B5B6D /* Main.storyboard */,
 				BCD099102C1D52AF000B5B6D /* Assets.xcassets */,
 				BCD099122C1D52AF000B5B6D /* LaunchScreen.storyboard */,
 				BCD099152C1D52AF000B5B6D /* Info.plist */,
 			);
 			path = Tendable;
+			sourceTree = "<group>";
+		};
+		BCD0991F2C1D5B26000B5B6D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				BCD099202C1D5B58000B5B6D /* NetworkUtility.swift */,
+				BCD099222C1D5D11000B5B6D /* APIClient.swift */,
+				BCD099242C1D5D75000B5B6D /* NetworkService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		BCD099262C1D5D8D000B5B6D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BCD099272C1D5D9D000B5B6D /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BCD0992A2C1D5DCE000B5B6D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0992B2C1D5DDF000B5B6D /* InspectionViewModel.swift */,
+				BCD099362C1D6F4D000B5B6D /* RegisterViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BCD099312C1D662C000B5B6D /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0992D2C1D6623000B5B6D /* LoginViewController.swift */,
+				BCD0992E2C1D6623000B5B6D /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		BCD099382C1EEEBD000B5B6D /* Inspection */ = {
+			isa = PBXGroup;
+			children = (
+				BCD099392C1EEED5000B5B6D /* InspectionViewController.swift */,
+				BCD0993A2C1EEED5000B5B6D /* InspectionViewController.xib */,
+				BCD0993E2C1EFBCA000B5B6D /* QuestionAnswerCell.swift */,
+			);
+			path = Inspection;
+			sourceTree = "<group>";
+		};
+		BCD0993D2C1EF0FC000B5B6D /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BCD0990B2C1D52AE000B5B6D /* HomeViewController.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +212,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCD0993C2C1EEED5000B5B6D /* InspectionViewController.xib in Resources */,
+				BCD099302C1D6623000B5B6D /* LoginViewController.xib in Resources */,
 				BCD099112C1D52AF000B5B6D /* Assets.xcassets in Resources */,
 				BCD099142C1D52AF000B5B6D /* Base in Resources */,
 				BCD0990F2C1D52AE000B5B6D /* Base in Resources */,
@@ -138,7 +227,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BCD0990C2C1D52AE000B5B6D /* ViewController.swift in Sources */,
+				BCD099332C1D6D3A000B5B6D /* Utility.swift in Sources */,
+				BCD099402C1EFBCA000B5B6D /* QuestionAnswerCell.swift in Sources */,
+				BCD0992F2C1D6623000B5B6D /* LoginViewController.swift in Sources */,
+				BCD099232C1D5D11000B5B6D /* APIClient.swift in Sources */,
+				BCD099212C1D5B58000B5B6D /* NetworkUtility.swift in Sources */,
+				BCD0992C2C1D5DDF000B5B6D /* InspectionViewModel.swift in Sources */,
+				BCD099252C1D5D75000B5B6D /* NetworkService.swift in Sources */,
+				BCD099282C1D5D9D000B5B6D /* Models.swift in Sources */,
+				BCD099372C1D6F4D000B5B6D /* RegisterViewModel.swift in Sources */,
+				BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */,
+				BCD099352C1D6E7D000B5B6D /* Constant.swift in Sources */,
+				BCD0993B2C1EEED5000B5B6D /* InspectionViewController.swift in Sources */,
 				BCD099082C1D52AE000B5B6D /* AppDelegate.swift in Sources */,
 				BCD0990A2C1D52AE000B5B6D /* SceneDelegate.swift in Sources */,
 			);
