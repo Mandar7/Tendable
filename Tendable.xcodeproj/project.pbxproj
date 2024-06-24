@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		042B632D2C29130400B3B190 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B632B2C29130400B3B190 /* LoginViewControllerTests.swift */; };
+		042B632E2C29130400B3B190 /* InspectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */; };
 		BCD099082C1D52AE000B5B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099072C1D52AE000B5B6D /* AppDelegate.swift */; };
 		BCD0990A2C1D52AE000B5B6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */; };
 		BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0990B2C1D52AE000B5B6D /* HomeViewController.swift */; };
@@ -28,7 +30,21 @@
 		BCD099402C1EFBCA000B5B6D /* QuestionAnswerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0993E2C1EFBCA000B5B6D /* QuestionAnswerCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		042B63252C2912BF00B3B190 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BCD098FC2C1D52AD000B5B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BCD099032C1D52AE000B5B6D;
+			remoteInfo = Tendable;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		042B63212C2912BF00B3B190 /* TendableTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TendableTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		042B632A2C29130300B3B190 /* TendableTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TendableTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		042B632B2C29130400B3B190 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
+		042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionViewControllerTests.swift; sourceTree = "<group>"; };
 		BCD099042C1D52AE000B5B6D /* Tendable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tendable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD099072C1D52AE000B5B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -53,6 +69,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		042B631E2C2912BE00B3B190 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD099012C1D52AE000B5B6D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -63,10 +86,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		042B63222C2912BF00B3B190 /* TendableTests */ = {
+			isa = PBXGroup;
+			children = (
+				042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */,
+				042B632B2C29130400B3B190 /* LoginViewControllerTests.swift */,
+				042B632A2C29130300B3B190 /* TendableTests-Bridging-Header.h */,
+			);
+			path = TendableTests;
+			sourceTree = "<group>";
+		};
 		BCD098FB2C1D52AD000B5B6D = {
 			isa = PBXGroup;
 			children = (
 				BCD099062C1D52AE000B5B6D /* Tendable */,
+				042B63222C2912BF00B3B190 /* TendableTests */,
 				BCD099052C1D52AE000B5B6D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -75,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				BCD099042C1D52AE000B5B6D /* Tendable.app */,
+				042B63212C2912BF00B3B190 /* TendableTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -157,6 +192,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		042B63202C2912BE00B3B190 /* TendableTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 042B63292C2912BF00B3B190 /* Build configuration list for PBXNativeTarget "TendableTests" */;
+			buildPhases = (
+				042B631D2C2912BE00B3B190 /* Sources */,
+				042B631E2C2912BE00B3B190 /* Frameworks */,
+				042B631F2C2912BE00B3B190 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				042B63262C2912BF00B3B190 /* PBXTargetDependency */,
+			);
+			name = TendableTests;
+			productName = TendableTests;
+			productReference = 042B63212C2912BF00B3B190 /* TendableTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		BCD099032C1D52AE000B5B6D /* Tendable */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = BCD099182C1D52AF000B5B6D /* Build configuration list for PBXNativeTarget "Tendable" */;
@@ -181,9 +234,14 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1540;
+				LastSwiftUpdateCheck = 1400;
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
+					042B63202C2912BE00B3B190 = {
+						CreatedOnToolsVersion = 14.0;
+						LastSwiftMigration = 1400;
+						TestTargetID = BCD099032C1D52AE000B5B6D;
+					};
 					BCD099032C1D52AE000B5B6D = {
 						CreatedOnToolsVersion = 15.4;
 					};
@@ -203,11 +261,19 @@
 			projectRoot = "";
 			targets = (
 				BCD099032C1D52AE000B5B6D /* Tendable */,
+				042B63202C2912BE00B3B190 /* TendableTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		042B631F2C2912BE00B3B190 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD099022C1D52AE000B5B6D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +289,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		042B631D2C2912BE00B3B190 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				042B632E2C29130400B3B190 /* InspectionViewControllerTests.swift in Sources */,
+				042B632D2C29130400B3B190 /* LoginViewControllerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		BCD099002C1D52AE000B5B6D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +321,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		042B63262C2912BF00B3B190 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BCD099032C1D52AE000B5B6D /* Tendable */;
+			targetProxy = 042B63252C2912BF00B3B190 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		BCD0990D2C1D52AE000B5B6D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -266,6 +349,61 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		042B63272C2912BF00B3B190 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mandar.TendableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TendableTests/TendableTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tendable.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tendable";
+			};
+			name = Debug;
+		};
+		042B63282C2912BF00B3B190 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Mandar.TendableTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "TendableTests/TendableTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tendable.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Tendable";
+			};
+			name = Release;
+		};
 		BCD099162C1D52AF000B5B6D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -400,6 +538,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -428,6 +567,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -444,6 +584,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		042B63292C2912BF00B3B190 /* Build configuration list for PBXNativeTarget "TendableTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				042B63272C2912BF00B3B190 /* Debug */,
+				042B63282C2912BF00B3B190 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		BCD098FF2C1D52AD000B5B6D /* Build configuration list for PBXProject "Tendable" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
