@@ -16,7 +16,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var loginBtn: UIButton!
     var isRegister: Bool = false
     var viewModel = RegisterViewModel()
-    let inspectionVC = InspectionViewController()
+    let dashboardVC = DashboardViewController()
 
     // MARK: UIViewController Lifecycle
     override func viewDidLoad() {
@@ -79,9 +79,9 @@ extension LoginViewController {
         viewModel.loginUser(emaiId: emailIdTxtFld.text ?? "", password: passwordTxtFld.text ?? "") { [weak self] (success, message) in
             DispatchQueue.main.async {
                 if success {
-                    if let inspectionVc = self?.inspectionVC {
+                    if let dashboardVC = self?.dashboardVC {
                         self?.presentAlert(title: SUCCESS, message: LOGIN_SUCCESS_MSG, completion: {
-                            self?.navigationController?.pushViewController(inspectionVc, animated: true)
+                            self?.navigationController?.pushViewController(dashboardVC, animated: true)
                         })
                     }
                 } else {

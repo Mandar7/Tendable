@@ -9,6 +9,26 @@
 /* Begin PBXBuildFile section */
 		042B632D2C29130400B3B190 /* LoginViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B632B2C29130400B3B190 /* LoginViewControllerTests.swift */; };
 		042B632E2C29130400B3B190 /* InspectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */; };
+		0473B0F82C2A701800AFA26D /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0F52C2A701800AFA26D /* DatabaseHelper.swift */; };
+		0473B0F92C2A701800AFA26D /* TendableModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0F62C2A701800AFA26D /* TendableModel.xcdatamodeld */; };
+		0473B10B2C2A704400AFA26D /* InpectionCoreModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FB2C2A704300AFA26D /* InpectionCoreModel+CoreDataClass.swift */; };
+		0473B10C2C2A704400AFA26D /* InspectionSurveyModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FC2C2A704300AFA26D /* InspectionSurveyModel+CoreDataClass.swift */; };
+		0473B10D2C2A704400AFA26D /* InpectionCoreModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FD2C2A704300AFA26D /* InpectionCoreModel+CoreDataProperties.swift */; };
+		0473B10E2C2A704400AFA26D /* InspectionAnswerModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FE2C2A704300AFA26D /* InspectionAnswerModel+CoreDataClass.swift */; };
+		0473B10F2C2A704400AFA26D /* InspectionAnswerModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FF2C2A704300AFA26D /* InspectionAnswerModel+CoreDataProperties.swift */; };
+		0473B1102C2A704400AFA26D /* InspectionUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1002C2A704300AFA26D /* InspectionUser+CoreDataProperties.swift */; };
+		0473B1112C2A704400AFA26D /* InspectionTypeModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1012C2A704300AFA26D /* InspectionTypeModel+CoreDataProperties.swift */; };
+		0473B1122C2A704400AFA26D /* InspectionUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1022C2A704300AFA26D /* InspectionUser+CoreDataClass.swift */; };
+		0473B1132C2A704400AFA26D /* InspectionQuestionsModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1032C2A704300AFA26D /* InspectionQuestionsModel+CoreDataClass.swift */; };
+		0473B1142C2A704400AFA26D /* InspectionQuestionsModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1042C2A704300AFA26D /* InspectionQuestionsModel+CoreDataProperties.swift */; };
+		0473B1152C2A704400AFA26D /* InspectionCategoryModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1052C2A704300AFA26D /* InspectionCategoryModel+CoreDataProperties.swift */; };
+		0473B1162C2A704400AFA26D /* InspectionSurveyModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1062C2A704300AFA26D /* InspectionSurveyModel+CoreDataProperties.swift */; };
+		0473B1172C2A704400AFA26D /* InspectionCategoryModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1072C2A704300AFA26D /* InspectionCategoryModel+CoreDataClass.swift */; };
+		0473B1182C2A704400AFA26D /* InspectionTypeModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1082C2A704300AFA26D /* InspectionTypeModel+CoreDataClass.swift */; };
+		0473B1192C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1092C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift */; };
+		0473B11A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */; };
+		0473B11E2C2A706B00AFA26D /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */; };
+		0473B11F2C2A706B00AFA26D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */; };
 		BCD099082C1D52AE000B5B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099072C1D52AE000B5B6D /* AppDelegate.swift */; };
 		BCD0990A2C1D52AE000B5B6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */; };
 		BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0990B2C1D52AE000B5B6D /* HomeViewController.swift */; };
@@ -45,6 +65,26 @@
 		042B632A2C29130300B3B190 /* TendableTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TendableTests-Bridging-Header.h"; sourceTree = "<group>"; };
 		042B632B2C29130400B3B190 /* LoginViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewControllerTests.swift; sourceTree = "<group>"; };
 		042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionViewControllerTests.swift; sourceTree = "<group>"; };
+		0473B0F52C2A701800AFA26D /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
+		0473B0F72C2A701800AFA26D /* TendableModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TendableModel.xcdatamodel; sourceTree = "<group>"; };
+		0473B0FB2C2A704300AFA26D /* InpectionCoreModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B0FC2C2A704300AFA26D /* InspectionSurveyModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionSurveyModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B0FD2C2A704300AFA26D /* InpectionCoreModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B0FE2C2A704300AFA26D /* InspectionAnswerModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B0FF2C2A704300AFA26D /* InspectionAnswerModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B1002C2A704300AFA26D /* InspectionUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B1012C2A704300AFA26D /* InspectionTypeModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionTypeModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B1022C2A704300AFA26D /* InspectionUser+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionUser+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B1032C2A704300AFA26D /* InspectionQuestionsModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionQuestionsModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B1042C2A704300AFA26D /* InspectionQuestionsModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionQuestionsModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B1052C2A704300AFA26D /* InspectionCategoryModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionCategoryModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B1062C2A704300AFA26D /* InspectionSurveyModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionSurveyModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B1072C2A704300AFA26D /* InspectionCategoryModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionCategoryModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B1082C2A704300AFA26D /* InspectionTypeModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionTypeModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B1092C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAreaModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAreaModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
+		0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		BCD099042C1D52AE000B5B6D /* Tendable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tendable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD099072C1D52AE000B5B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +136,48 @@
 			path = TendableTests;
 			sourceTree = "<group>";
 		};
+		0473B0F12C2A6FD200AFA26D /* DatabaseManager */ = {
+			isa = PBXGroup;
+			children = (
+				0473B0FA2C2A702500AFA26D /* CoeDataModelClass */,
+				0473B0F52C2A701800AFA26D /* DatabaseHelper.swift */,
+				0473B0F62C2A701800AFA26D /* TendableModel.xcdatamodeld */,
+			);
+			path = DatabaseManager;
+			sourceTree = "<group>";
+		};
+		0473B0FA2C2A702500AFA26D /* CoeDataModelClass */ = {
+			isa = PBXGroup;
+			children = (
+				0473B0FB2C2A704300AFA26D /* InpectionCoreModel+CoreDataClass.swift */,
+				0473B0FD2C2A704300AFA26D /* InpectionCoreModel+CoreDataProperties.swift */,
+				0473B0FE2C2A704300AFA26D /* InspectionAnswerModel+CoreDataClass.swift */,
+				0473B0FF2C2A704300AFA26D /* InspectionAnswerModel+CoreDataProperties.swift */,
+				0473B1092C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift */,
+				0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */,
+				0473B1072C2A704300AFA26D /* InspectionCategoryModel+CoreDataClass.swift */,
+				0473B1052C2A704300AFA26D /* InspectionCategoryModel+CoreDataProperties.swift */,
+				0473B1032C2A704300AFA26D /* InspectionQuestionsModel+CoreDataClass.swift */,
+				0473B1042C2A704300AFA26D /* InspectionQuestionsModel+CoreDataProperties.swift */,
+				0473B0FC2C2A704300AFA26D /* InspectionSurveyModel+CoreDataClass.swift */,
+				0473B1062C2A704300AFA26D /* InspectionSurveyModel+CoreDataProperties.swift */,
+				0473B1082C2A704300AFA26D /* InspectionTypeModel+CoreDataClass.swift */,
+				0473B1012C2A704300AFA26D /* InspectionTypeModel+CoreDataProperties.swift */,
+				0473B1022C2A704300AFA26D /* InspectionUser+CoreDataClass.swift */,
+				0473B1002C2A704300AFA26D /* InspectionUser+CoreDataProperties.swift */,
+			);
+			path = CoeDataModelClass;
+			sourceTree = "<group>";
+		};
+		0473B11B2C2A705000AFA26D /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */,
+				0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
 		BCD098FB2C1D52AD000B5B6D = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +199,8 @@
 		BCD099062C1D52AE000B5B6D /* Tendable */ = {
 			isa = PBXGroup;
 			children = (
+				0473B11B2C2A705000AFA26D /* Dashboard */,
+				0473B0F12C2A6FD200AFA26D /* DatabaseManager */,
 				BCD099072C1D52AE000B5B6D /* AppDelegate.swift */,
 				BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */,
 				BCD0993D2C1EF0FC000B5B6D /* Home */,
@@ -283,6 +367,7 @@
 				BCD099112C1D52AF000B5B6D /* Assets.xcassets in Resources */,
 				BCD099142C1D52AF000B5B6D /* Base in Resources */,
 				BCD0990F2C1D52AE000B5B6D /* Base in Resources */,
+				0473B11E2C2A706B00AFA26D /* DashboardViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,16 +388,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				BCD099332C1D6D3A000B5B6D /* Utility.swift in Sources */,
+				0473B1172C2A704400AFA26D /* InspectionCategoryModel+CoreDataClass.swift in Sources */,
+				0473B1142C2A704400AFA26D /* InspectionQuestionsModel+CoreDataProperties.swift in Sources */,
+				0473B1152C2A704400AFA26D /* InspectionCategoryModel+CoreDataProperties.swift in Sources */,
+				0473B0F82C2A701800AFA26D /* DatabaseHelper.swift in Sources */,
+				0473B0F92C2A701800AFA26D /* TendableModel.xcdatamodeld in Sources */,
 				BCD099402C1EFBCA000B5B6D /* QuestionAnswerCell.swift in Sources */,
 				BCD0992F2C1D6623000B5B6D /* LoginViewController.swift in Sources */,
+				0473B11A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift in Sources */,
+				0473B10E2C2A704400AFA26D /* InspectionAnswerModel+CoreDataClass.swift in Sources */,
 				BCD099232C1D5D11000B5B6D /* APIClient.swift in Sources */,
+				0473B1112C2A704400AFA26D /* InspectionTypeModel+CoreDataProperties.swift in Sources */,
+				0473B1132C2A704400AFA26D /* InspectionQuestionsModel+CoreDataClass.swift in Sources */,
+				0473B1162C2A704400AFA26D /* InspectionSurveyModel+CoreDataProperties.swift in Sources */,
+				0473B10F2C2A704400AFA26D /* InspectionAnswerModel+CoreDataProperties.swift in Sources */,
 				BCD099212C1D5B58000B5B6D /* NetworkUtility.swift in Sources */,
+				0473B10C2C2A704400AFA26D /* InspectionSurveyModel+CoreDataClass.swift in Sources */,
 				BCD0992C2C1D5DDF000B5B6D /* InspectionViewModel.swift in Sources */,
+				0473B1122C2A704400AFA26D /* InspectionUser+CoreDataClass.swift in Sources */,
+				0473B11F2C2A706B00AFA26D /* DashboardViewController.swift in Sources */,
+				0473B10B2C2A704400AFA26D /* InpectionCoreModel+CoreDataClass.swift in Sources */,
 				BCD099252C1D5D75000B5B6D /* NetworkService.swift in Sources */,
+				0473B1192C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift in Sources */,
 				BCD099282C1D5D9D000B5B6D /* Models.swift in Sources */,
+				0473B1182C2A704400AFA26D /* InspectionTypeModel+CoreDataClass.swift in Sources */,
+				0473B10D2C2A704400AFA26D /* InpectionCoreModel+CoreDataProperties.swift in Sources */,
 				BCD099372C1D6F4D000B5B6D /* RegisterViewModel.swift in Sources */,
 				BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */,
 				BCD099352C1D6E7D000B5B6D /* Constant.swift in Sources */,
+				0473B1102C2A704400AFA26D /* InspectionUser+CoreDataProperties.swift in Sources */,
 				BCD0993B2C1EEED5000B5B6D /* InspectionViewController.swift in Sources */,
 				BCD099082C1D52AE000B5B6D /* AppDelegate.swift in Sources */,
 				BCD0990A2C1D52AE000B5B6D /* SceneDelegate.swift in Sources */,
@@ -612,6 +716,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0473B0F62C2A701800AFA26D /* TendableModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0473B0F72C2A701800AFA26D /* TendableModel.xcdatamodel */,
+			);
+			currentVersion = 0473B0F72C2A701800AFA26D /* TendableModel.xcdatamodel */;
+			path = TendableModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = BCD098FC2C1D52AD000B5B6D /* Project object */;
 }

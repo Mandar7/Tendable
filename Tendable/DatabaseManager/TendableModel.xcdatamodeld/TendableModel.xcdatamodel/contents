@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+    <entity name="InpectionCoreModel" representedClassName=".InpectionCoreModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="inspectionArea" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionAreaModel" inverseName="parentInspection" inverseEntity="InspectionAreaModel"/>
+        <relationship name="inspectionSurvey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionSurveyModel" inverseName="parentInspection" inverseEntity="InspectionSurveyModel"/>
+        <relationship name="inspectionType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionTypeModel" inverseName="parentInspection" inverseEntity="InspectionTypeModel"/>
+        <relationship name="parentUser" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionUser" inverseName="inspections" inverseEntity="InspectionUser"/>
+    </entity>
+    <entity name="InspectionAnswerModel" representedClassName=".InspectionAnswerModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="String"/>
+        <relationship name="inspectionQuestion" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionQuestionsModel" inverseName="answerChoices" inverseEntity="InspectionQuestionsModel"/>
+    </entity>
+    <entity name="InspectionAreaModel" representedClassName=".InspectionAreaModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="parentInspection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InpectionCoreModel" inverseName="inspectionArea" inverseEntity="InpectionCoreModel"/>
+    </entity>
+    <entity name="InspectionCategoryModel" representedClassName=".InspectionCategoryModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="parentSurvey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionSurveyModel" inverseName="categories" inverseEntity="InspectionSurveyModel"/>
+        <relationship name="subQuestions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InspectionQuestionsModel" inverseName="parentCategory" inverseEntity="InspectionQuestionsModel"/>
+    </entity>
+    <entity name="InspectionQuestionsModel" representedClassName=".InspectionQuestionsModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="selectedAnswerChoiceId" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="answerChoices" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InspectionAnswerModel" inverseName="inspectionQuestion" inverseEntity="InspectionAnswerModel"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionCategoryModel" inverseName="subQuestions" inverseEntity="InspectionCategoryModel"/>
+    </entity>
+    <entity name="InspectionSurveyModel" representedClassName=".InspectionSurveyModel" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <relationship name="categories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InspectionCategoryModel" inverseName="parentSurvey" inverseEntity="InspectionCategoryModel"/>
+        <relationship name="parentInspection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InpectionCoreModel" inverseName="inspectionSurvey" inverseEntity="InpectionCoreModel"/>
+    </entity>
+    <entity name="InspectionTypeModel" representedClassName=".InspectionTypeModel" syncable="YES">
+        <attribute name="access" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <relationship name="parentInspection" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InpectionCoreModel" inverseName="inspectionType" inverseEntity="InpectionCoreModel"/>
+    </entity>
+    <entity name="InspectionUser" representedClassName="InspectionUser" syncable="YES">
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <relationship name="inspections" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="InpectionCoreModel" inverseName="parentUser" inverseEntity="InpectionCoreModel"/>
+    </entity>
+</model>
