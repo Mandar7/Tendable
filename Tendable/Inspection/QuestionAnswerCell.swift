@@ -45,7 +45,7 @@ class QuestionAnswerCell: UITableViewCell {
     }
 
     // MARK: Configure Methods
-    func configure(question: String, answers: [String], selectedAnswer: String?, indexPath: IndexPath) {
+    func configure(question: String, answers: [String], selectedAnswer: String?, indexPath: IndexPath, tapable: Bool) {
         questionLabel.text = question
         questionIndexPath = indexPath
         self.selectedAnswer = selectedAnswer
@@ -63,6 +63,7 @@ class QuestionAnswerCell: UITableViewCell {
             button.setTitle(answer, for: .normal)
             button.addTarget(self, action: #selector(answerButtonTapped(_:)), for: .touchUpInside)
             button.translatesAutoresizingMaskIntoConstraints = false
+            button.isEnabled = tapable
             contentView.addSubview(button)
             answerButtons.append(button)
 

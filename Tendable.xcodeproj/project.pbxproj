@@ -11,11 +11,7 @@
 		042B632E2C29130400B3B190 /* InspectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */; };
 		0473B0F82C2A701800AFA26D /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0F52C2A701800AFA26D /* DatabaseHelper.swift */; };
 		0473B0F92C2A701800AFA26D /* TendableModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0F62C2A701800AFA26D /* TendableModel.xcdatamodeld */; };
-		0473B10B2C2A704400AFA26D /* InpectionCoreModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FB2C2A704300AFA26D /* InpectionCoreModel+CoreDataClass.swift */; };
 		0473B10C2C2A704400AFA26D /* InspectionSurveyModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FC2C2A704300AFA26D /* InspectionSurveyModel+CoreDataClass.swift */; };
-		0473B10D2C2A704400AFA26D /* InpectionCoreModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FD2C2A704300AFA26D /* InpectionCoreModel+CoreDataProperties.swift */; };
-		0473B10E2C2A704400AFA26D /* InspectionAnswerModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FE2C2A704300AFA26D /* InspectionAnswerModel+CoreDataClass.swift */; };
-		0473B10F2C2A704400AFA26D /* InspectionAnswerModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B0FF2C2A704300AFA26D /* InspectionAnswerModel+CoreDataProperties.swift */; };
 		0473B1102C2A704400AFA26D /* InspectionUser+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1002C2A704300AFA26D /* InspectionUser+CoreDataProperties.swift */; };
 		0473B1112C2A704400AFA26D /* InspectionTypeModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1012C2A704300AFA26D /* InspectionTypeModel+CoreDataProperties.swift */; };
 		0473B1122C2A704400AFA26D /* InspectionUser+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B1022C2A704300AFA26D /* InspectionUser+CoreDataClass.swift */; };
@@ -29,6 +25,13 @@
 		0473B11A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */; };
 		0473B11E2C2A706B00AFA26D /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */; };
 		0473B11F2C2A706B00AFA26D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */; };
+		BC39815F2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39815D2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift */; };
+		BC3981602C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39815E2C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift */; };
+		BC39816F2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39816D2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift */; };
+		BC3981702C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39816E2C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift */; };
+		BC3981742C36422500DE548A /* InspectionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3981722C36422500DE548A /* InspectionHistoryViewController.swift */; };
+		BC3981752C36422500DE548A /* InspectionHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3981732C36422500DE548A /* InspectionHistoryViewController.xib */; };
+		BC39817D2C364ADB00DE548A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39817C2C364ADB00DE548A /* HistoryTableViewCell.swift */; };
 		BCD099082C1D52AE000B5B6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099072C1D52AE000B5B6D /* AppDelegate.swift */; };
 		BCD0990A2C1D52AE000B5B6D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */; };
 		BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD0990B2C1D52AE000B5B6D /* HomeViewController.swift */; };
@@ -67,11 +70,7 @@
 		042B632C2C29130400B3B190 /* InspectionViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InspectionViewControllerTests.swift; sourceTree = "<group>"; };
 		0473B0F52C2A701800AFA26D /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		0473B0F72C2A701800AFA26D /* TendableModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TendableModel.xcdatamodel; sourceTree = "<group>"; };
-		0473B0FB2C2A704300AFA26D /* InpectionCoreModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		0473B0FC2C2A704300AFA26D /* InspectionSurveyModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionSurveyModel+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0473B0FD2C2A704300AFA26D /* InpectionCoreModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		0473B0FE2C2A704300AFA26D /* InspectionAnswerModel+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataClass.swift"; sourceTree = "<group>"; };
-		0473B0FF2C2A704300AFA26D /* InspectionAnswerModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0473B1002C2A704300AFA26D /* InspectionUser+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionUser+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0473B1012C2A704300AFA26D /* InspectionTypeModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionTypeModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0473B1022C2A704300AFA26D /* InspectionUser+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionUser+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -85,6 +84,14 @@
 		0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAreaModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		BC34D7942C36342E00BEBB71 /* TendableModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TendableModel 2.xcdatamodel"; sourceTree = "<group>"; };
+		BC39815D2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC39815E2C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC39816D2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		BC39816E2C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		BC3981722C36422500DE548A /* InspectionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionHistoryViewController.swift; sourceTree = "<group>"; };
+		BC3981732C36422500DE548A /* InspectionHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectionHistoryViewController.xib; sourceTree = "<group>"; };
+		BC39817C2C364ADB00DE548A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
 		BCD099042C1D52AE000B5B6D /* Tendable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tendable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD099072C1D52AE000B5B6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -149,16 +156,16 @@
 		0473B0FA2C2A702500AFA26D /* CoeDataModelClass */ = {
 			isa = PBXGroup;
 			children = (
-				0473B0FB2C2A704300AFA26D /* InpectionCoreModel+CoreDataClass.swift */,
-				0473B0FD2C2A704300AFA26D /* InpectionCoreModel+CoreDataProperties.swift */,
-				0473B0FE2C2A704300AFA26D /* InspectionAnswerModel+CoreDataClass.swift */,
-				0473B0FF2C2A704300AFA26D /* InspectionAnswerModel+CoreDataProperties.swift */,
+				BC39816D2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift */,
+				BC39816E2C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift */,
 				0473B1092C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift */,
 				0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */,
 				0473B1072C2A704300AFA26D /* InspectionCategoryModel+CoreDataClass.swift */,
 				0473B1052C2A704300AFA26D /* InspectionCategoryModel+CoreDataProperties.swift */,
 				0473B1032C2A704300AFA26D /* InspectionQuestionsModel+CoreDataClass.swift */,
 				0473B1042C2A704300AFA26D /* InspectionQuestionsModel+CoreDataProperties.swift */,
+				BC39815D2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift */,
+				BC39815E2C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift */,
 				0473B0FC2C2A704300AFA26D /* InspectionSurveyModel+CoreDataClass.swift */,
 				0473B1062C2A704300AFA26D /* InspectionSurveyModel+CoreDataProperties.swift */,
 				0473B1082C2A704300AFA26D /* InspectionTypeModel+CoreDataClass.swift */,
@@ -176,6 +183,16 @@
 				0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		BC3981712C3641F900DE548A /* InspectionHistory */ = {
+			isa = PBXGroup;
+			children = (
+				BC3981722C36422500DE548A /* InspectionHistoryViewController.swift */,
+				BC3981732C36422500DE548A /* InspectionHistoryViewController.xib */,
+				BC39817C2C364ADB00DE548A /* HistoryTableViewCell.swift */,
+			);
+			path = InspectionHistory;
 			sourceTree = "<group>";
 		};
 		BCD098FB2C1D52AD000B5B6D = {
@@ -199,6 +216,7 @@
 		BCD099062C1D52AE000B5B6D /* Tendable */ = {
 			isa = PBXGroup;
 			children = (
+				BC3981712C3641F900DE548A /* InspectionHistory */,
 				0473B11B2C2A705000AFA26D /* Dashboard */,
 				0473B0F12C2A6FD200AFA26D /* DatabaseManager */,
 				BCD099072C1D52AE000B5B6D /* AppDelegate.swift */,
@@ -365,6 +383,7 @@
 				BCD0993C2C1EEED5000B5B6D /* InspectionViewController.xib in Resources */,
 				BCD099302C1D6623000B5B6D /* LoginViewController.xib in Resources */,
 				BCD099112C1D52AF000B5B6D /* Assets.xcassets in Resources */,
+				BC3981752C36422500DE548A /* InspectionHistoryViewController.xib in Resources */,
 				BCD099142C1D52AF000B5B6D /* Base in Resources */,
 				BCD0990F2C1D52AE000B5B6D /* Base in Resources */,
 				0473B11E2C2A706B00AFA26D /* DashboardViewController.xib in Resources */,
@@ -393,26 +412,28 @@
 				0473B1152C2A704400AFA26D /* InspectionCategoryModel+CoreDataProperties.swift in Sources */,
 				0473B0F82C2A701800AFA26D /* DatabaseHelper.swift in Sources */,
 				0473B0F92C2A701800AFA26D /* TendableModel.xcdatamodeld in Sources */,
+				BC39815F2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift in Sources */,
+				BC3981602C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift in Sources */,
 				BCD099402C1EFBCA000B5B6D /* QuestionAnswerCell.swift in Sources */,
+				BC39817D2C364ADB00DE548A /* HistoryTableViewCell.swift in Sources */,
+				BC3981742C36422500DE548A /* InspectionHistoryViewController.swift in Sources */,
 				BCD0992F2C1D6623000B5B6D /* LoginViewController.swift in Sources */,
 				0473B11A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift in Sources */,
-				0473B10E2C2A704400AFA26D /* InspectionAnswerModel+CoreDataClass.swift in Sources */,
 				BCD099232C1D5D11000B5B6D /* APIClient.swift in Sources */,
+				BC39816F2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift in Sources */,
+				BC3981702C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift in Sources */,
 				0473B1112C2A704400AFA26D /* InspectionTypeModel+CoreDataProperties.swift in Sources */,
 				0473B1132C2A704400AFA26D /* InspectionQuestionsModel+CoreDataClass.swift in Sources */,
 				0473B1162C2A704400AFA26D /* InspectionSurveyModel+CoreDataProperties.swift in Sources */,
-				0473B10F2C2A704400AFA26D /* InspectionAnswerModel+CoreDataProperties.swift in Sources */,
 				BCD099212C1D5B58000B5B6D /* NetworkUtility.swift in Sources */,
 				0473B10C2C2A704400AFA26D /* InspectionSurveyModel+CoreDataClass.swift in Sources */,
 				BCD0992C2C1D5DDF000B5B6D /* InspectionViewModel.swift in Sources */,
 				0473B1122C2A704400AFA26D /* InspectionUser+CoreDataClass.swift in Sources */,
 				0473B11F2C2A706B00AFA26D /* DashboardViewController.swift in Sources */,
-				0473B10B2C2A704400AFA26D /* InpectionCoreModel+CoreDataClass.swift in Sources */,
 				BCD099252C1D5D75000B5B6D /* NetworkService.swift in Sources */,
 				0473B1192C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift in Sources */,
 				BCD099282C1D5D9D000B5B6D /* Models.swift in Sources */,
 				0473B1182C2A704400AFA26D /* InspectionTypeModel+CoreDataClass.swift in Sources */,
-				0473B10D2C2A704400AFA26D /* InpectionCoreModel+CoreDataProperties.swift in Sources */,
 				BCD099372C1D6F4D000B5B6D /* RegisterViewModel.swift in Sources */,
 				BCD0990C2C1D52AE000B5B6D /* HomeViewController.swift in Sources */,
 				BCD099352C1D6E7D000B5B6D /* Constant.swift in Sources */,
@@ -721,6 +742,7 @@
 		0473B0F62C2A701800AFA26D /* TendableModel.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				BC34D7942C36342E00BEBB71 /* TendableModel 2.xcdatamodel */,
 				0473B0F72C2A701800AFA26D /* TendableModel.xcdatamodel */,
 			);
 			currentVersion = 0473B0F72C2A701800AFA26D /* TendableModel.xcdatamodel */;

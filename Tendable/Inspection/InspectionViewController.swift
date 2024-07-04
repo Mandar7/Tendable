@@ -13,10 +13,12 @@ class InspectionViewController: UIViewController {
     @IBOutlet var inspectionTbl: UITableView!
     @IBOutlet var inspectionName: UILabel!
     @IBOutlet var inspectionArea: UILabel!
+    @IBOutlet var submitBtn: UIButton!
     var viewModel = InspectionViewModel()
     var inspection: Inspection?
     var resultInspection: Inspection?
     var selectedAnswers: [IndexPath: String] = [:]
+    var isForHistory: Bool = false
 
     // MARK: UIViewController Lifecycle
     override func viewDidLoad() {
@@ -26,7 +28,12 @@ class InspectionViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        self.fetchNewInspection()
+        if isForHistory {
+            self.submitBtn.isHidden = true
+        } else {
+            self.fetchNewInspection()
+            self.submitBtn.isHidden = false
+        }
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -50,6 +57,7 @@ class InspectionViewController: UIViewController {
                 viewModel.submitInspection(answerInspection: finalInspection) { success, msg in
                     DispatchQueue.main.async {
                         if success {
+                            DatabaseHelper.sharedInstance.saveInspection(userMailId: "111", inspection: self.resultInspection!)
                             self.presentAlert(title: SUCCESS, message: SUBMIT_SUCCESS_MSG + "Your score is \(self.calculateScore())") {
                                 self.navigationController?.popViewController(animated: true)
                             }
@@ -151,7 +159,7 @@ extension InspectionViewController: UITableViewDelegate, UITableViewDataSource {
         let question = inspectionCategory?.questions?[indexPath.row]
         let answers = getAnwerFromChoices(choices: question?.answerChoices ?? [])
         let selectedAnswer = selectedAnswers[indexPath]
-        cell.configure(question: question?.name ?? "", answers: answers, selectedAnswer: selectedAnswer, indexPath: indexPath)
+        cell.configure(question: question?.name ?? "", answers: answers, selectedAnswer: selectedAnswer, indexPath: indexPath, tapable: !isForHistory)
         cell.delegate = self
         return cell
     }

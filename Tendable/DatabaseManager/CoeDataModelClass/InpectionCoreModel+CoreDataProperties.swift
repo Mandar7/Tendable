@@ -2,7 +2,7 @@
 //  InpectionCoreModel+CoreDataProperties.swift
 //  Tendable
 //
-//  Created by Choudhary, Mandar on 25/06/24.
+//  Created by Choudhary, Mandar on 04/07/24.
 //
 //
 
@@ -17,9 +17,10 @@ extension InpectionCoreModel {
     }
 
     @NSManaged public var id: Int32
-    @NSManaged public var inspectionType: InspectionTypeModel?
+    @NSManaged public var parentUserId: String?
     @NSManaged public var inspectionArea: InspectionAreaModel?
     @NSManaged public var inspectionSurvey: InspectionSurveyModel?
+    @NSManaged public var inspectionType: InspectionTypeModel?
     @NSManaged public var parentUser: InspectionUser?
 
 }

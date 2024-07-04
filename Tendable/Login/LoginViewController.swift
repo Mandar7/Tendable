@@ -65,6 +65,7 @@ extension LoginViewController {
         viewModel.registerUser(emaiId: emailIdTxtFld.text ?? "", password: passwordTxtFld.text ?? "") { [weak self] (success, message) in
             DispatchQueue.main.async {
                 if success {
+                    DatabaseHelper.sharedInstance.saveUser(userMailId: self?.emailIdTxtFld.text ?? "", userPassword: self?.passwordTxtFld.text ?? "")
                     self?.presentAlert(title: SUCCESS, message: REG_SUCCESS_MSG, completion: {
                         self?.navigationController?.popViewController(animated: true)
                     })

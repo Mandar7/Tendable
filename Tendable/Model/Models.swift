@@ -27,45 +27,45 @@ struct InspectionModel: Codable {
 }
 
 struct Inspection: Codable {
-    let id: Int?
-    let inspectionType: InspectionType?
-    let area: InspectionArea?
+    var id: Int?
+    var inspectionType: InspectionType?
+    var area: InspectionArea?
     var survey: InspectionSurvey?
 }
 
 struct InspectionType: Codable {
-    let id: Int?
-    let name: String?
-    let access: String?
+    var id: Int?
+    var name: String?
+    var access: String?
 }
 
 struct InspectionArea: Codable {
-    let id: Int?
-    let name: String?
+    var id: Int?
+    var name: String?
 }
 
 struct InspectionSurvey: Codable {
-    let id: Int?
+    var id: Int?
     var categories: [InspectionCategory]?
 }
 
 struct InspectionCategory: Codable {
-    let id: Int?
-    let name: String?
+    var id: Int?
+    var name: String?
     var questions: [InspectionQuestions]?
 }
 
 struct InspectionQuestions: Codable {
-    let id: Int?
-    let name: String?
-    let answerChoices: [InspectionAnswer]?
+    var id: Int?
+    var name: String?
+    var answerChoices: [InspectionAnswer]?
     var selectedAnswerChoiceId: Int?
 }
 
 struct InspectionAnswer: Codable {
-    let id: Int?
-    let name: String?
-    let score: Double?
+    var id: Int?
+    var name: String?
+    var score: Double?
 }
 
 

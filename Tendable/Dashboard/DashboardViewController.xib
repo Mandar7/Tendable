@@ -43,6 +43,9 @@
                     <buttonConfiguration key="configuration" style="plain" title="Inspection History">
                         <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </buttonConfiguration>
+                    <connections>
+                        <action selector="historyBtnClicked:" destination="-1" eventType="touchUpInside" id="79D-YP-oLB"/>
+                    </connections>
                 </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>

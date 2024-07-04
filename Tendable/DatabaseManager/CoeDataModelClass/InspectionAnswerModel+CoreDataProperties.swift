@@ -2,7 +2,7 @@
 //  InspectionAnswerModel+CoreDataProperties.swift
 //  Tendable
 //
-//  Created by Choudhary, Mandar on 25/06/24.
+//  Created by Choudhary, Mandar on 04/07/24.
 //
 //
 
@@ -18,7 +18,7 @@ extension InspectionAnswerModel {
 
     @NSManaged public var id: Int32
     @NSManaged public var name: String?
-    @NSManaged public var score: String?
+    @NSManaged public var score: Double
     @NSManaged public var inspectionQuestion: InspectionQuestionsModel?
 
 }
