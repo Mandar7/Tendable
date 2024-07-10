@@ -10,6 +10,8 @@ import UIKit
 class InspectionHistoryViewController: UIViewController {
 
     @IBOutlet var historyTblView: UITableView!
+    @IBOutlet weak var noDataLbl: UILabel!
+    
     var historyData: [InpectionCoreModel] = []
     let inspectionVC = InspectionViewController()
     
@@ -21,6 +23,8 @@ class InspectionHistoryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         self.historyTblView.reloadData()
+        historyTblView.isHidden = historyData.isEmpty
+        noDataLbl.isHidden = !historyData.isEmpty
     }
     
     // MARK: Setup Methods
@@ -40,8 +44,10 @@ extension InspectionHistoryViewController: UITableViewDelegate, UITableViewDataS
             return UITableViewCell()
         }
         let history = historyData[indexPath.row]
-        cell.titleLabel.text = String(history.id)
-        cell.detailLabel.text = history.parentUserId
+        cell.idLabel.text = "Inspection ID: \(String(history.id))"
+        cell.typeLabel.text = "Inspection Type: \(history.inspectionType?.name ?? "")"
+        cell.areaLabel.text = "Inspection Area: \(history.inspectionArea?.name ?? "")"
+        cell.scoreLabel.text = "Inspection Score: \(String(history.id))"
         return cell
     }
     

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22758" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22522" systemVersion="22G720" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithSwiftData="YES" userDefinedModelVersionIdentifier="">
     <entity name="InpectionCoreModel" representedClassName=".InpectionCoreModel" syncable="YES">
         <attribute name="id" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="parentUserId" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES"/>
         <relationship name="inspectionArea" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionAreaModel" inverseName="parentInspection" inverseEntity="InspectionAreaModel"/>
         <relationship name="inspectionSurvey" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionSurveyModel" inverseName="parentInspection" inverseEntity="InspectionSurveyModel"/>
         <relationship name="inspectionType" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="InspectionTypeModel" inverseName="parentInspection" inverseEntity="InspectionTypeModel"/>

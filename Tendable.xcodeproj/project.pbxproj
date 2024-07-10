@@ -25,10 +25,10 @@
 		0473B11A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */; };
 		0473B11E2C2A706B00AFA26D /* DashboardViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */; };
 		0473B11F2C2A706B00AFA26D /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */; };
+		04C4F5452C3E5A8600460D78 /* InpectionCoreModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4F5432C3E5A8600460D78 /* InpectionCoreModel+CoreDataClass.swift */; };
+		04C4F5462C3E5A8600460D78 /* InpectionCoreModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C4F5442C3E5A8600460D78 /* InpectionCoreModel+CoreDataProperties.swift */; };
 		BC39815F2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39815D2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift */; };
 		BC3981602C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39815E2C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift */; };
-		BC39816F2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39816D2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift */; };
-		BC3981702C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39816E2C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift */; };
 		BC3981742C36422500DE548A /* InspectionHistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC3981722C36422500DE548A /* InspectionHistoryViewController.swift */; };
 		BC3981752C36422500DE548A /* InspectionHistoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BC3981732C36422500DE548A /* InspectionHistoryViewController.xib */; };
 		BC39817D2C364ADB00DE548A /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC39817C2C364ADB00DE548A /* HistoryTableViewCell.swift */; };
@@ -84,11 +84,11 @@
 		0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "InspectionAreaModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		0473B11C2C2A706B00AFA26D /* DashboardViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DashboardViewController.xib; sourceTree = "<group>"; };
 		0473B11D2C2A706B00AFA26D /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		04C4F5432C3E5A8600460D78 /* InpectionCoreModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataClass.swift"; sourceTree = "<group>"; };
+		04C4F5442C3E5A8600460D78 /* InpectionCoreModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC34D7942C36342E00BEBB71 /* TendableModel 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "TendableModel 2.xcdatamodel"; sourceTree = "<group>"; };
 		BC39815D2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataClass.swift"; sourceTree = "<group>"; };
 		BC39815E2C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InspectionAnswerModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		BC39816D2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataClass.swift"; sourceTree = "<group>"; };
-		BC39816E2C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "InpectionCoreModel+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		BC3981722C36422500DE548A /* InspectionHistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InspectionHistoryViewController.swift; sourceTree = "<group>"; };
 		BC3981732C36422500DE548A /* InspectionHistoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InspectionHistoryViewController.xib; sourceTree = "<group>"; };
 		BC39817C2C364ADB00DE548A /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
@@ -156,8 +156,8 @@
 		0473B0FA2C2A702500AFA26D /* CoeDataModelClass */ = {
 			isa = PBXGroup;
 			children = (
-				BC39816D2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift */,
-				BC39816E2C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift */,
+				04C4F5432C3E5A8600460D78 /* InpectionCoreModel+CoreDataClass.swift */,
+				04C4F5442C3E5A8600460D78 /* InpectionCoreModel+CoreDataProperties.swift */,
 				0473B1092C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift */,
 				0473B10A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift */,
 				0473B1072C2A704300AFA26D /* InspectionCategoryModel+CoreDataClass.swift */,
@@ -216,17 +216,17 @@
 		BCD099062C1D52AE000B5B6D /* Tendable */ = {
 			isa = PBXGroup;
 			children = (
-				BC3981712C3641F900DE548A /* InspectionHistory */,
-				0473B11B2C2A705000AFA26D /* Dashboard */,
-				0473B0F12C2A6FD200AFA26D /* DatabaseManager */,
 				BCD099072C1D52AE000B5B6D /* AppDelegate.swift */,
 				BCD099092C1D52AE000B5B6D /* SceneDelegate.swift */,
 				BCD0993D2C1EF0FC000B5B6D /* Home */,
 				BCD099312C1D662C000B5B6D /* Login */,
+				0473B11B2C2A705000AFA26D /* Dashboard */,
 				BCD099382C1EEEBD000B5B6D /* Inspection */,
+				BC3981712C3641F900DE548A /* InspectionHistory */,
 				BCD099262C1D5D8D000B5B6D /* Model */,
 				BCD0992A2C1D5DCE000B5B6D /* ViewModels */,
 				BCD0991F2C1D5B26000B5B6D /* Network */,
+				0473B0F12C2A6FD200AFA26D /* DatabaseManager */,
 				BCD099322C1D6D3A000B5B6D /* Utility.swift */,
 				BCD099342C1D6E7D000B5B6D /* Constant.swift */,
 				BCD0990D2C1D52AE000B5B6D /* Main.storyboard */,
@@ -414,14 +414,13 @@
 				0473B0F92C2A701800AFA26D /* TendableModel.xcdatamodeld in Sources */,
 				BC39815F2C363C7600DE548A /* InspectionAnswerModel+CoreDataClass.swift in Sources */,
 				BC3981602C363C7600DE548A /* InspectionAnswerModel+CoreDataProperties.swift in Sources */,
+				04C4F5452C3E5A8600460D78 /* InpectionCoreModel+CoreDataClass.swift in Sources */,
 				BCD099402C1EFBCA000B5B6D /* QuestionAnswerCell.swift in Sources */,
 				BC39817D2C364ADB00DE548A /* HistoryTableViewCell.swift in Sources */,
 				BC3981742C36422500DE548A /* InspectionHistoryViewController.swift in Sources */,
 				BCD0992F2C1D6623000B5B6D /* LoginViewController.swift in Sources */,
 				0473B11A2C2A704400AFA26D /* InspectionAreaModel+CoreDataProperties.swift in Sources */,
 				BCD099232C1D5D11000B5B6D /* APIClient.swift in Sources */,
-				BC39816F2C363F2800DE548A /* InpectionCoreModel+CoreDataClass.swift in Sources */,
-				BC3981702C363F2800DE548A /* InpectionCoreModel+CoreDataProperties.swift in Sources */,
 				0473B1112C2A704400AFA26D /* InspectionTypeModel+CoreDataProperties.swift in Sources */,
 				0473B1132C2A704400AFA26D /* InspectionQuestionsModel+CoreDataClass.swift in Sources */,
 				0473B1162C2A704400AFA26D /* InspectionSurveyModel+CoreDataProperties.swift in Sources */,
@@ -429,6 +428,7 @@
 				0473B10C2C2A704400AFA26D /* InspectionSurveyModel+CoreDataClass.swift in Sources */,
 				BCD0992C2C1D5DDF000B5B6D /* InspectionViewModel.swift in Sources */,
 				0473B1122C2A704400AFA26D /* InspectionUser+CoreDataClass.swift in Sources */,
+				04C4F5462C3E5A8600460D78 /* InpectionCoreModel+CoreDataProperties.swift in Sources */,
 				0473B11F2C2A706B00AFA26D /* DashboardViewController.swift in Sources */,
 				BCD099252C1D5D75000B5B6D /* NetworkService.swift in Sources */,
 				0473B1192C2A704400AFA26D /* InspectionAreaModel+CoreDataClass.swift in Sources */,

@@ -14,6 +14,7 @@ class LoginViewController: UIViewController {
     @IBOutlet var emailIdTxtFld: UITextField!
     @IBOutlet var passwordTxtFld: UITextField!
     @IBOutlet var loginBtn: UIButton!
+    
     var isRegister: Bool = false
     var viewModel = RegisterViewModel()
     let dashboardVC = DashboardViewController()
@@ -80,6 +81,9 @@ extension LoginViewController {
         viewModel.loginUser(emaiId: emailIdTxtFld.text ?? "", password: passwordTxtFld.text ?? "") { [weak self] (success, message) in
             DispatchQueue.main.async {
                 if success {
+                    DatabaseHelper.sharedInstance.LOGGED_IN_USER_ID = self?.emailIdTxtFld.text ?? ""
+                    DatabaseHelper.sharedInstance.LOGGED_IN_USER_PASSWORD = self?.passwordTxtFld.text ?? ""
+                    
                     if let dashboardVC = self?.dashboardVC {
                         self?.presentAlert(title: SUCCESS, message: LOGIN_SUCCESS_MSG, completion: {
                             self?.navigationController?.pushViewController(dashboardVC, animated: true)

@@ -21,8 +21,7 @@ class DashboardViewController: UIViewController {
     }
     
     @IBAction func historyBtnClicked(_ sender: Any) {
-        let data: [InpectionCoreModel] = DatabaseHelper.sharedInstance.getInspectionsWith(userMailId: "111") ?? []
-        print("Data == \(String(describing: data))")
+        let data: [InpectionCoreModel] = DatabaseHelper.sharedInstance.getInspectionsWith(userMailId: DatabaseHelper.sharedInstance.LOGGED_IN_USER_ID) ?? []
         inspectionHistoryVC.historyData = data
         self.navigationController?.pushViewController(inspectionHistoryVC, animated: true)
 

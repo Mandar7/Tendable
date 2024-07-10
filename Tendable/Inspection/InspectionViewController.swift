@@ -57,7 +57,7 @@ class InspectionViewController: UIViewController {
                 viewModel.submitInspection(answerInspection: finalInspection) { success, msg in
                     DispatchQueue.main.async {
                         if success {
-                            DatabaseHelper.sharedInstance.saveInspection(userMailId: "111", inspection: self.resultInspection!)
+                            DatabaseHelper.sharedInstance.saveInspection(userMailId: DatabaseHelper.sharedInstance.LOGGED_IN_USER_ID, inspection: self.resultInspection!, score: self.calculateScore())
                             self.presentAlert(title: SUCCESS, message: SUBMIT_SUCCESS_MSG + "Your score is \(self.calculateScore())") {
                                 self.navigationController?.popViewController(animated: true)
                             }

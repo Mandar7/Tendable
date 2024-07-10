@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InspectionHistoryViewController" customModule="Tendable" customModuleProvider="target">
             <connections>
                 <outlet property="historyTblView" destination="heF-yo-tgN" id="FP5-Hv-Mw7"/>
+                <outlet property="noDataLbl" destination="OS7-ha-lEg" id="oQA-eu-3Hp"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,6 +21,12 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your inspection history will be available here...!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OS7-ha-lEg">
+                    <rect key="frame" x="20" y="428.33333333333331" width="353.33333333333337" height="20.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="heF-yo-tgN">
                     <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -33,7 +40,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="heF-yo-tgN" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Qgl-iP-QlR"/>
+                <constraint firstItem="OS7-ha-lEg" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="U4J-BA-1Qf"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="heF-yo-tgN" secondAttribute="bottom" id="iM2-1I-VNc"/>
+                <constraint firstItem="OS7-ha-lEg" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="jXJ-XW-2H5"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="heF-yo-tgN" secondAttribute="trailing" id="mKL-q6-JTo"/>
                 <constraint firstItem="heF-yo-tgN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="r6S-xU-Lgb"/>
             </constraints>

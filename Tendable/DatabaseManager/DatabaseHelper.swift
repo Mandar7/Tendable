@@ -11,6 +11,8 @@ import CoreData
 class DatabaseHelper: NSObject {
     
     static let sharedInstance = DatabaseHelper()
+    var LOGGED_IN_USER_ID = ""
+    var LOGGED_IN_USER_PASSWORD = ""
     
     private override init() {
         super.init()
@@ -64,9 +66,10 @@ class DatabaseHelper: NSObject {
         return nil
     }
 
-    func saveInspection(userMailId: String, inspection: Inspection) {
+    func saveInspection(userMailId: String, inspection: Inspection, score: Double) {
         let newInspection = InpectionCoreModel(context: context)
         newInspection.id = Int32(inspection.id ?? 0)
+        newInspection.score = Int32(score)
         
         let inspectionAreaModel = InspectionAreaModel(context: context)
         inspectionAreaModel.id = Int32(inspection.area?.id ?? 0)

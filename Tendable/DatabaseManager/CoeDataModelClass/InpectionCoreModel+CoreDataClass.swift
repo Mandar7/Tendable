@@ -2,7 +2,7 @@
 //  InpectionCoreModel+CoreDataClass.swift
 //  Tendable
 //
-//  Created by Choudhary, Mandar on 04/07/24.
+//  Created by Mandar Choudhary on 10/07/24.
 //
 //
 
